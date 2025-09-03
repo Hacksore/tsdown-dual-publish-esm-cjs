@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "tsdown"
+    "build": "tsdown",
+    "test": "pnpm run build && npx --yes @arethetypeswrong/cli --pack ."
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
