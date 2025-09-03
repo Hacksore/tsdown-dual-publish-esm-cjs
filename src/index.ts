@@ -1,3 +1,3 @@
-export default function ligma() {
+export function ligma() {
   return "Ligma balls!";
 }
