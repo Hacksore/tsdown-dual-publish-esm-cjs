@@ -1,13 +1,22 @@
 {
   "name": "2025-09-03-08-25-08",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "build": "tsdown"
   },
-  "dependencies": {
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
   },
   "devDependencies": {
+    "tsdown": "^0.14.2",
     "typescript": "~5.8.3"
   }
 }
