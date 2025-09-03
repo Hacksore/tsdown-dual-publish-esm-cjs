@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "tsdown",
-    "test": "pnpm run build && npx --yes @arethetypeswrong/cli --pack ."
+    "test": "pnpm run build && attw --pack ."
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -25,6 +25,7 @@
     }
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.2",
     "tsdown": "^0.14.2",
     "typescript": "~5.8.3"
   }
